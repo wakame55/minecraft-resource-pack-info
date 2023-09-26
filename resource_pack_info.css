@@ -48,6 +48,6 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* 透明度の変化速度を変更 */
+    transition: opacity 0.2s ease-in-out; /* 透明度の変化速度を変更 */
     pointer-events: none;
 }
