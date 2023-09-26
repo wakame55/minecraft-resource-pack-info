@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft リソースパック情報</title>
+    <link rel="stylesheet" href="resource_pack_info.css">
+</head>
+<body>
+<style>
+    /* スタイルを追加 */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        background-color: #3498db;
+        color: #fff;
+        padding: 20px 0;
+        margin: 0;
+    }
+    .resource-table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .resource-table th, .resource-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        position: relative; /* 相対位置指定 */
+    }
+    .resource-table th {
+        background-color: #3498db;
+        color: #fff;
+    }
+    /* グループ化された行のスタイル */
+    .resource-table tbody tr.group {
+        font-weight: bold;
+        background-color: #f2f2f2;
+    }
+    /* 縦の区切り線 */
+    .resource-table td:first-child {
+        border-right: 1px solid #ddd;
+    }
+    /* `model_filename`と`custommodeldata`の間の縦線 */
+    .resource-table td:nth-child(2) {
+        border-right: 1px solid #ddd;
+    }
+    /* コピーボタンのスタイル */
+    .copy-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    /* 通知のスタイル */
+    .notification {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        opacity: 0; /* 透明度を0に設定 */
+        transition: opacity 1s ease-in-out; /* 透明度の変化を1秒で */
+        pointer-events: none;
+        width: 300px; /* 通知の幅を設定 */
+    }
+</style>
+<h1>Minecraft リソースパック情報</h1>
+<table class="resource-table">
+    <thead>
+    <tr>
+        <th>layer0</th>
+        <th>model_filename</th>
+        <th>custommodeldata</th>
+        <th>コピー</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class='group'><td>blaze_rod</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>blazewand</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;blaze_rod&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>carrot_on_a_stick</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>blue_wand</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr><td></td><td>branch</td><td>2</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:2} 1'>コピー</button></td></tr>
+<tr><td></td><td>tenikessyou</td><td>3</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:3} 1'>コピー</button></td></tr>
+<tr><td></td><td>kaihukukessyou</td><td>4</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:4} 1'>コピー</button></td></tr>
+<tr><td></td><td>aobaranoken</td><td>5</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:5} 1'>コピー</button></td></tr>
+<tr><td></td><td></td><td>6</td><td><button class='copy-button' data-copy-text='/give @s &quot;carrot_on_a_stick&quot;{CustomModelData:6} 1'>コピー</button></td></tr>
+<tr class='group'><td>chiseled_nether_bricks</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>frenzy_boar</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;chiseled_nether_bricks&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_boots</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>steel_boots</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_boots&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_chestplate</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>steel_chestplate</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_chestplate&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_helmet</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>steel_helmet</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_helmet&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_ingot</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>steel_ingot</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_ingot&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_leggings</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>steel_leggings</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_leggings&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>iron_sword</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>katana</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_sword&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr><td></td><td>drows</td><td>2</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_sword&quot;{CustomModelData:2} 1'>コピー</button></td></tr>
+<tr><td></td><td>steel_sword</td><td>3</td><td><button class='copy-button' data-copy-text='/give @s &quot;iron_sword&quot;{CustomModelData:3} 1'>コピー</button></td></tr>
+<tr class='group'><td>leather</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>inosisi_kawa</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;leather&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>netherite_sword</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>elishdata</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;netherite_sword&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr><td></td><td>elishdata_3d</td><td>2</td><td><button class='copy-button' data-copy-text='/give @s &quot;netherite_sword&quot;{CustomModelData:2} 1'>コピー</button></td></tr>
+<tr class='group'><td>porkchop</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>inosisi_niku</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;porkchop&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr class='group'><td>stick</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>wand</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;stick&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr><td></td><td>stickywand</td><td>2</td><td><button class='copy-button' data-copy-text='/give @s &quot;stick&quot;{CustomModelData:2} 1'>コピー</button></td></tr>
+<tr><td></td><td>cmd_10</td><td>10</td><td><button class='copy-button' data-copy-text='/give @s &quot;stick&quot;{CustomModelData:10} 1'>コピー</button></td></tr>
+<tr><td></td><td>cmd_11</td><td>11</td><td><button class='copy-button' data-copy-text='/give @s &quot;stick&quot;{CustomModelData:11} 1'>コピー</button></td></tr>
+<tr class='group'><td>zombie_head</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>elishdata_3d</td><td>1</td><td><button class='copy-button' data-copy-text='/give @s &quot;zombie_head&quot;{CustomModelData:1} 1'>コピー</button></td></tr>
+<tr><td></td><td>frenzy_boar</td><td>2</td><td><button class='copy-button' data-copy-text='/give @s &quot;zombie_head&quot;{CustomModelData:2} 1'>コピー</button></td></tr>
+</tbody>
+</table>
+<div id="notification" class="notification"></div> <!-- 通知エリア -->
+<script>
+    // コピーボタンがクリックされたときの処理
+    var copyButtons = document.querySelectorAll('.copy-button');
+    copyButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var textToCopy = button.getAttribute('data-copy-text');
+            var textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            // 通知を表示
+            var notification = document.getElementById('notification');
+            notification.textContent = 'コピーしました: ' + textToCopy;
+            notification.style.opacity = 1; // 通知を表示
+            // 通知がクリックされたときの処理
+            notification.addEventListener('click', function() {
+                // 通知を非表示にする
+                notification.style.opacity = 0;
+                setTimeout(function() {
+                    notification.textContent = ''; // 内容をクリア
+                }, 500); // 0.5秒後に通知を非表示
+            });
+            // 2秒後に通知を非表示にする
+            setTimeout(function() {
+                notification.style.opacity = 0;
+                setTimeout(function() {
+                    notification.textContent = ''; // 内容をクリア
+                }, 500); // 0.5秒後に通知を非表示
+            }, 2000); // 2秒後に通知を非表示
+        });
+    });
+</script>
+</body>
+</html>
