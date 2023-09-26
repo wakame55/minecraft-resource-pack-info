@@ -38,11 +38,6 @@ h1 {
 .resource-table td:first-child {
     border-right: 1px solid #ddd;
 }
-/* `model_filename`と`custommodeldata`の間の縦線 */
-.resource-table td:nth-child(2) {
-    border-right: 1px solid #ddd;
-}
-
 /* 通知のスタイル */
 .notification {
     position: fixed;
