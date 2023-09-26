@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 h1 {
     text-align: center;
     background-color: #3498db;
@@ -13,7 +12,6 @@ h1 {
     padding: 20px 0;
     margin: 0;
 }
-
 .resource-table {
     width: 80%;
     margin: 20px auto;
@@ -21,30 +19,25 @@ h1 {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .resource-table th, .resource-table td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     position: relative; /* 相対位置指定 */
 }
-
 .resource-table th {
     background-color: #3498db;
     color: #fff;
 }
-
 /* グループ化された行のスタイル */
 .resource-table tbody tr.group {
     font-weight: bold;
     background-color: #f2f2f2;
 }
-
 /* 縦の区切り線 */
 .resource-table td:first-child {
     border-right: 1px solid #ddd;
 }
-
 /* `model_filename`と`custommodeldata`の間の縦線 */
 .resource-table td:nth-child(2) {
     border-right: 1px solid #ddd;
@@ -59,6 +52,7 @@ h1 {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-    opacity: 0; /* 最初は完全に表示された状態から開始 */
-    transition: opacity 3s; /* opacity を変更するアニメーションを設定 */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* 透明度の変化速度を変更 */
+    pointer-events: none;
 }
